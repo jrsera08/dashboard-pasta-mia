@@ -589,7 +589,7 @@ def main():
                     analysis['by_producto'],
                     'Display',
                     'Importe_Venta',
-                    orientation='h'
+                    orientation='v'
                 )
                 st.plotly_chart(fig_productos, use_container_width=True, key="chart_productos")
                 st.markdown('</div>', unsafe_allow_html=True)
@@ -681,3 +681,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
