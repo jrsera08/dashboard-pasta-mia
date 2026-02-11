@@ -582,7 +582,7 @@ def main():
             with st.container():
                 st.markdown('<div class="chart-container">', unsafe_allow_html=True)
                 analysis['by_producto']['Display'] = analysis['by_producto'].apply(
-                    lambda x: x['Descripcion'][:30] + '...' if len(str(x['Descripcion'])) > 30 else x['Descripcion'],
+                    lambda x: x['Producto'][:30] + '...' if len(str(x['Producto'])) > 30 else x['Producto'],
                     axis=1
                 )
                 fig_productos = create_bar_chart_vibrant(
@@ -681,4 +681,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
